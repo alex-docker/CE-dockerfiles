@@ -1,0 +1,25 @@
+
+A
+
+dnsmasq -d -a 172.17.0.3
+
+with no docker port redirects, we need to use other tools to pass the packets.
+
+apt-get install isc-dhcp-relay
+``dhcrelay -i br0 172.17.0.3 -d``
+
+will pass the dhcp requests from the ethernet network to the docker container, but the container's replies are dumpted on the ground (you can see them on with ``dhcpdump -i docker0``)
+
+the next day, I followed a slightly different tack:
+
+root@mini:~# bcrelay -i docker0 -o br0
+root@mini:~# dhcrelay 172.17.0.5 -m forward -D -d -i br0
+
+and setup http://blog.codeaholics.org/2013/giving-dockerlxc-containers-a-routable-ip-address/
+
+I now have to back each bit out to see what isn't needed :)
+1. killed the bcrelay, it still works?
+2. killed the dhcrelay, and it stopped working
+
+
+interestingly, after running it for a while, the host box becomes unresponsive (and there are no dhcp server replies either

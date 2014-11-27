@@ -1,0 +1,5 @@
+PASSWD=`hostname`
+useradd -s /bin/bash devops
+echo "devops:$PASSWD" | chpasswd
+( cd /home;git clone https://github.com/alex2006hw/devops.git;chown -R devops: devops )
+

@@ -1,0 +1,9 @@
+opt/elasticsearch*
+opt/logstash/logs
+opt/logstash/bin
+opt/kibana/*.log
+opt/kibana/html
+opt/kibana/logs
+service/*
+init/*
+sv/**/supervise
