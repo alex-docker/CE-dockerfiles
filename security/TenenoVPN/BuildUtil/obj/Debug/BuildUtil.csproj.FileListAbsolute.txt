@@ -1,0 +1,8 @@
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\bin\BuildUtilTmp.exe.config
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\bin\BuildUtilTmp.exe
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\bin\BuildUtilTmp.pdb
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\BuildUtil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\BuildUtil\obj\Debug\BuildUtil.Properties.Resources.resources
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\BuildUtil\obj\Debug\BuildUtil.csproj.GenerateResource.Cache
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\BuildUtil\obj\Debug\BuildUtilTmp.exe
+C:\Users\Nico\Desktop\SoftEtherVPN-master\src\BuildUtil\obj\Debug\BuildUtilTmp.pdb

@@ -1,0 +1,4 @@
+check process {{getv "/meta/service/fqdn"}}/haproxy with pidfile /var/run/haproxy.pid
+  start program = "/usr/sbin/service haproxy start" with timeout 60 seconds
+  stop program  = "/usr/sbin/service haproxy stop"
+  restart program  = "/usr/sbin/service haproxy restart" with timeout 120 seconds
