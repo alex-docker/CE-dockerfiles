@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM clouderg/dubuntu14
 
 RUN apt-get update && apt-get install -y -q gcc binutils make supervisor isc-dhcp-server curl
 

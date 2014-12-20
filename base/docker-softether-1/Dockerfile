@@ -1,7 +1,7 @@
 # SoftEther VPN server
 
-FROM ubuntu:latest
-MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
+FROM clouderg/dubuntu14
+MAINTAINER admin@clouderg.com
 
 RUN apt-get update &&\
         apt-get -y -q install gcc make wget
