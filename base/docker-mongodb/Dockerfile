@@ -17,7 +17,10 @@ add	./90-devops /etc/sudoers.d/90-devops
 add	./devops-user /usr/local/bin/devops-user
 run	chmod +x /usr/local/bin/devops-user
 run	chmod 440 /etc/sudoers.d/90-devops
+run	/usr/local/bin/devops-user
+
+# Define additional metadata for our image.
+VOLUME ["/var/log/supervisor", "/etc/supervisor/conf.d", "/home/devops"]
 
 expose  27017 22
-cmd	["/usr/local/bin/devops-user"]
 cmd     ["/usr/bin/supervisord", "-n"]
