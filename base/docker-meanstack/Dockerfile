@@ -11,5 +11,8 @@ run	bash -c "apt-get install -y nodejs || true"
 
 add     ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+# Define additional metadata for our image.
+VOLUME ["/var/log/supervisor", "/etc/supervisor/conf.d", "/home/devops", "/home/www" ]
+
 expose  27017 22
 cmd     ["/usr/bin/supervisord", "-n"]
