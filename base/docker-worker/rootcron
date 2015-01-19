@@ -1,0 +1,7 @@
+COUNTER=0
+while (/bin/true); do
+( cd /home/www;git pull;chown -R www-data: * ) 2>&1 >> /var/log/rootcron.log
+let COUNTER=COUNTER+1
+echo $COUNTER >> /var/log/rootcron.log
+sleep 1s
+done
