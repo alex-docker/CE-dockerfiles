@@ -24,4 +24,5 @@ add	haproxy.cfg /etc/haproxy/haproxy.cfg
 VOLUME ["/var/log/supervisor", "/etc/supervisor/conf.d", "/usr/local", "/data", "/etc/haproxy/", "/home/devops", "/home/www" ]
 
 expose  80 443
+cmd	["/usr/local/bin/rootcron", "&"]
 cmd     ["/usr/bin/supervisord", "-n"]

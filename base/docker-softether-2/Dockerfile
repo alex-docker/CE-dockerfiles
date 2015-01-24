@@ -2,7 +2,7 @@ FROM clouderg/dubuntu14
 
 RUN apt-get update && apt-get install -y -q gcc binutils make supervisor isc-dhcp-server curl
 
-ENV softether_url http://www.softether-download.com/files/softether/v4.11-9506-beta-2014.10.22-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.11-9506-beta-2014.10.22-linux-x64-64bit.tar.gz
+ENV softether_url http://www.softether-download.com/files/softether/v4.12-9514-beta-2014.11.17-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.12-9514-beta-2014.11.17-linux-x64-64bit.tar.gz
 
 WORKDIR /opt
 

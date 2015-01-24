@@ -1,4 +1,4 @@
-REPO=mikz/softether
+REPO=clouderg/softether-2
 
 .PHONY: admin bash start build
 
