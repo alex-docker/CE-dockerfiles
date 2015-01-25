@@ -1,7 +1,0 @@
-[template]
-
-src  = "loggly-newrelic-sysmond.conf.tmpl"
-dest = "{{SOURCE_ROOTDIR}}/settings/loggly-newrelic-sysmond.conf"
-keys = [
-  "/meta/cloud/loggly/token",
-]

@@ -1,7 +1,0 @@
-[template]
-
-src  = "loggly-monit.conf.tmpl"
-dest = "{{SOURCE_ROOTDIR}}/settings/loggly-monit.conf"
-keys = [
-  "/meta/cloud/loggly/token",
-]

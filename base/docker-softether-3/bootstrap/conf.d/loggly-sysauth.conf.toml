@@ -1,7 +1,0 @@
-[template]
-
-src  = "loggly-sysauth.conf.tmpl"
-dest = "{{SOURCE_ROOTDIR}}/settings/loggly-sysauth.conf"
-keys = [
-  "/meta/cloud/loggly/token",
-]
