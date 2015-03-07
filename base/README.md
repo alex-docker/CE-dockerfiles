@@ -1,4 +1,4 @@
-Docker tempaltes:
+Docker templates:
 =================
 
 
